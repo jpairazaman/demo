@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  codigo: MyString
+  nombre_corto: MyString
+  nombre_largo: MyString
+  editorial: 
+  categorias: 
+  disponible: false
+
+two:
+  codigo: MyString
+  nombre_corto: MyString
+  nombre_largo: MyString
+  editorial: 
+  categorias: 
+  disponible: false

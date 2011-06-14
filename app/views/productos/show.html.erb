@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @producto.codigo %>
+</p>
+
+<p>
+  <b>Nombre corto:</b>
+  <%= @producto.nombre_corto %>
+</p>
+
+<p>
+  <b>Nombre largo:</b>
+  <%= @producto.nombre_largo %>
+</p>
+
+<p>
+  <b>Editorial:</b>
+  <%= @producto.editorial %>
+</p>
+
+<p>
+  <b>Categorias:</b>
+  <%= @producto.categoria %>
+</p>
+
+<p>
+  <b>Disponible:</b>
+  <%= @producto.disponible %>
+</p>
+
+
+<%= link_to 'Editar', edit_producto_path(@producto) %> |
+<%= link_to 'Regresar', productos_path %>

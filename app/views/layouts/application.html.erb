@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo App</title>
+  <%= stylesheet_link_tag :all %>
+  
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+		     <a href="http://www.lexuseditores.com" class="logo"><img src="images/lexus_t.png" width="87" height="68" alt="Logo Lexus" /></a>
+			<h1>LEXUS EDITORES</h1>
+            <ul id="top-navigation">
+                <li><%= link_to "Productos", productos_path, :class => "active" %></li>
+                <li><%= link_to "Categorias", categorias_path %></li>
+                <li><%= link_to "Editoriales", editoriales_path %></li>
+            </ul>
+        </div>
+        <div id="middle">
+            <div id="left-column">
+                <h3>Titulo1</h3>
+                <ul class="nav">
+                    <li><a href="#">Opci&oacute;n 1</a></li>
+                    <li><a href="#">Opci&oacute;n 2</a></li>
+                    <li><a href="#">Opci&oacute;n 3</a></li>
+                    <li><a href="#">Opci&oacute;n 4</a></li>
+                    <li><a href="#">Opci&oacute;n 5</a></li>
+                    <li><a href="#">Opci&oacute;n 6</a></li>
+                </ul>
+                <a href="#" class="link">Titulo 2</a>
+                <a href="#" class="link">Titulo 3</a>
+            </div>
+            <div id="center-column">
+                
+                <div class="table">
+				    <%= yield %>
+					<!--
+                    <div class="select">
+                        <strong>Other Pages: </strong>
+                        <select>
+                            <option>1</option>
+                        </select>
+                    </div>
+					-->
+                </div>
+
+				<!--
+
+                <div class="table">
+                    <table class="listing form" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th class="full" colspan="2">Header Here</th>
+                        </tr>
+                        <tr>
+                            <td width="172"><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+				-->
+
+
+            </div>
+            <div id="right-column">
+                <strong class="h">Informaci&oacute;n</strong>
+                <div class="box">Aqui se encontrar&aacute; informaci&oacute;n adicional de la aplicaci&oacute;n relativo a los datos mostrados en el cuadro central.</div>
+            </div>
+        </div>
+        <div id="footer">
+			<p>Desarrollado para <a href="http://www.lexuseditores.com">Lexus Editores</a> 2011. Usando HTML5/CSS3 por <a href="mailto:JAquino@LexusEditores.com">Javier Aquino</a> 2011.</p>
+		</div>
+    </div>
+</body>
+</html>
+

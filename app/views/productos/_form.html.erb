@@ -1,0 +1,9 @@
+<%= simple_form_for(@producto) do |f| %>
+    <%= f.input :codigo %>
+    <%= f.input :nombre_corto %>
+    <%= f.input :nombre_largo %>
+    <%= f.association :editorial, :include_blank => false %>
+    <%= f.association :categoria, :include_blank => false %>
+    <%= f.input :disponible %>
+    <%= f.submit %>
+<% end %>
